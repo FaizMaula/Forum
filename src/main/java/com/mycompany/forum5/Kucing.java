@@ -10,9 +10,9 @@ package com.mycompany.forum5;
  */
 public class Kucing extends Hewan{
     private String ras;
-    
+        
 
-    public Kucing(String ras, String nama, String jenisKelamin, String pemilik, int umur) {
+    public Kucing(String ras, String nama, String jenisKelamin, Pemilik pemilik, int umur) {
         super(nama, jenisKelamin, pemilik, umur);
         this.ras = ras;
     }

@@ -10,12 +10,15 @@ package com.mycompany.forum5;
 public class Forum5 {
 
     public static void main(String[] args) {
-        Hewan kucing = new Hewan("Momo", "Jantan", "Jacob", 3);
-        Anjing buddy = new Anjing("Pitbull", "Buddy", "Betina", "Joshua", 5);
-        Kucing brown = new Kucing("Persia", "Brown", "Betina", "Orlando", 1);
-        Burung lukas = new Burung("Kakatua", "Lukas", "Jantan", "Asep", 3);
-        DokterHewan dokter1 = new DokterHewan("Dr. Faiz", "Spesialis Anjing");
-
+        Pemilik Jacob = new Pemilik("Jacob");
+        Pemilik Joshua = new Pemilik("Joshua");
+        Pemilik Orlando = new Pemilik("Orlando");
+        Pemilik Asep = new Pemilik("Asep");
+        Hewan kucing = new Hewan("Momo", "Jantan", Jacob, 3);
+        Anjing buddy = new Anjing("Pitbull", "Buddy", "Betina", Joshua, 5);
+        Kucing brown = new Kucing("Persia", "Brown", "Betina", Orlando, 1);
+        Burung lukas = new Burung("Kakatua", "Lukas", "Jantan", Asep, 3);
+        DokterHewan Dokter1 = new DokterHewan("Dr.Adnan", "Spesialis Kucing");
 
         buddy.tambahRiwayatMedis("Vaksin Parvovirus");
         buddy.tambahRiwayatMedis("Operasi kaki");
@@ -37,5 +40,7 @@ public class Forum5 {
         
         lukas.infoHewan();
         lukas.tampilkanRiwayatMedis();
+        
+        Dokter1.periksaHewan(kucing);
     }
 }

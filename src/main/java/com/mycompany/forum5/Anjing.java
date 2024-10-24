@@ -12,7 +12,7 @@ public class Anjing extends Hewan {
     
      private String ras;
 
-    public Anjing(String ras, String nama, String jenisKelamin, String pemilik, int umur) {
+    public Anjing(String ras, String nama, String jenisKelamin, Pemilik pemilik, int umur) {
         super(nama, jenisKelamin, pemilik, umur);
         this.ras = ras;
     }

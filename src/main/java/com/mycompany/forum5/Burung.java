@@ -10,10 +10,12 @@ package com.mycompany.forum5;
  */
 public class Burung extends Hewan{
     private String ras;
-
-    public Burung(String ras, String nama, String jenisKelamin, String pemilik, int umur) {
+    private Sayap sayap;
+    
+    public Burung(String ras, String nama, String jenisKelamin, Pemilik pemilik, int umur) {
         super(nama, jenisKelamin, pemilik, umur);
         this.ras = ras;
+        this.sayap = new Sayap(5);
     }
     
     public void infoHewan() {
@@ -22,8 +24,10 @@ public class Burung extends Hewan{
         System.out.println("Burung berjenis kelamin: " + jenisKelamin);
         System.out.println("Nama pemilik burung adalah: " + pemilik.getNama());
         System.out.println("Burung berumur: " + umur + " tahun");
+        System.out.print("nama ");sayap.infoSayap();
     }
     public void berkicau() {
         System.out.println("Burung berkiacau");
     }
+    
 }

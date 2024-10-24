@@ -17,11 +17,11 @@ public class Hewan {
     protected int umur;
     private List<String> riwayatMedis = new ArrayList<>();
     
-    public Hewan(String nama, String jenisKelamin, String namaPemilik ,int umur) {
+    public Hewan(String nama, String jenisKelamin, Pemilik Pemilik ,int umur) {
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;
         this.umur = umur;
-        this.pemilik = new Pemilik(namaPemilik);
+        this.pemilik = Pemilik;
         this.riwayatMedis = new ArrayList<>();
     }
     

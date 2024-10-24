@@ -8,20 +8,17 @@ package com.mycompany.forum5;
  *
  * @author fmaul
  */
-public class Pemilik {
-    private String nama;    
-
-    public Pemilik(String nama) {
-        this.nama = nama;
-        
+public class Sayap {
+    private int panjang;
+    public Sayap(int panjang){
+        this.panjang = panjang;
     }
 
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
+    public int getPanjang() {
+        return panjang;
     }
     
+    public void infoSayap(){
+        System.out.println(" memiliki sayap dengan panjang " + panjang );
+    }
 }
